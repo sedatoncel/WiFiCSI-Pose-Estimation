@@ -1,0 +1,32 @@
+# 1. SENSÖR VE VERİ BİÇİMİ
+modality: 'wifi-csi'
+protocol: 'protocol3'
+data_unit: 'frame'
+
+# 2. BÖLME YÖNTEMİ (Ortama göre)
+split_to_use: 'cross_scene_split'
+
+# 3. ORTAM BÖLME AYARLARI (Senin senaryon)
+cross_scene_split:
+  train_dataset:
+    split: training
+    scenes: ['E01', 'E02']
+    subjects: None
+    actions: all
+  val_dataset:
+    split: validation
+    scenes: ['E04']
+    subjects: None
+    actions: all
+
+# 4. BAŞLANGIÇ ÇEKİRDEĞİ
+init_rand_seed: 42
+
+# 5. YÜKLEYİCİ AYARLARI (Orijinaldeki gibi sadece batch_size bırakıldı)
+train_loader:
+  batch_size: 32
+
+val_loader:
+  batch_size: 32
+
+output_folder: './ckpt/'
