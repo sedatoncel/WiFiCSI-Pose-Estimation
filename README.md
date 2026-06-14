@@ -30,7 +30,6 @@ limitation, not a problem with one single room.
 * Two output heads: root position (3 values) and 17 keypoints (51 values).
 * ~14.4M parameters.
 
-![Model pipeline](model_diagram.png)
 
 ## Files
 
@@ -49,7 +48,8 @@ included in this repository (it is very large). Download it from the official so
 
 * MMFi paper: Yang et al., *MM-Fi: Multi-Modal Non-Intrusive 4D Human Dataset for
   Versatile Wireless Sensing*, NeurIPS 2023 (arXiv:2305.10345).
-* Dataset download: https://drive.google.com/drive/folders/1tf9HHfCGo2lsw_km5R481emmdBmpuyJy
+* Dataset download: Official MMFi repository (dataset library + download links): https://github.com/ybhbingo/MMFi_dataset
+ 
 
 After downloading, set the dataset path inside the scripts:
 
